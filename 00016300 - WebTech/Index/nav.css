@@ -1,0 +1,147 @@
+/* SETTING OVERALL TAG VALUES */
+* {
+    --mainColor: #080708;
+    --matchingColor: #3772ff ;
+    --fontColor: #f4fdff;
+    --fontColor-1: ; 
+    --extraColor: #d8e0e2;
+    --bgColor: #f6f6f6; 
+    --bgColor1: #e2e2e2;
+
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+
+    color: var(--mainColor);
+    user-select: none;
+}
+
+/* SETTING BACKGROUND COLOR BODY */
+body {
+    background-color: var(--bgColor);
+}
+
+/* SETTING BACKGROUND COLOR OF DIV IN NAVBAR */
+.personal-pages {
+    background-color: var(--bgColor1);
+    padding: 5px 100px;
+}
+.personal-pages ul li {
+    cursor: pointer;
+}
+.personal-pages ul li p {
+    text-decoration: underline;
+}
+.personal-pages img {
+    height: 17px;
+    margin-right: 5px;
+}
+
+/* PUTTING EVERTHING IN THE CENTER AND ADDING MARGIN */
+.personal-pages, .profile-search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.profile-search {
+    padding: 5px 115px;
+    display: flex;
+}
+
+.personal-pages ul, .personal-pages ul li {
+    display: flex;
+}
+
+.catalogue-search {
+    display: flex;
+    width: 700px;
+    align-items: center;
+    font-weight: 600;
+    margin-left: 55px;
+}
+.catalogue-search input {
+    position: relative;
+    height: 40px;
+    width: 80%;
+    outline: none;
+    border: 1px solid var(--bgColor1);
+    border-radius: 5px 0 0 5px;
+
+    padding: 0 15px;
+}
+
+.catalogue-search input[type="search"]::-webkit-search-decoration,
+.catalogue-search input[type="search"]::-webkit-search-cancel-button,
+.catalogue-search input[type="search"]::-webkit-search-results-button,
+.catalogue-search input[type="search"]::-webkit-search-results-decoration {
+    display: none; }
+
+.btnSearch {
+    background-color: var(--bgColor1);
+
+    height: 38px;
+    width: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    cursor: pointer;
+
+}
+.catalogue-search img {
+    height: 25px;
+    background-color: var(--bgColor1);
+}
+
+.personal-pages ul li {
+    margin: 0 15px;
+}
+
+.profile-search-icons {
+    display: flex;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+/* PRODUCT TYPES | NAVBAR */
+.product-types {
+    padding: 0 100px;
+}
+.product-types ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px 15px;
+}
+
+.product-types ul {
+    cursor: pointer;
+}
+
+.log-in a, .favourites a, .cart a {
+    display: flex;
+    width: auto;
+    margin-left: 30px;
+}
+.profile-search-icons img {
+    height: 18px;
+    margin-right: 5px;
+}
+
+.expanded-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.expanded-menu p:nth-child(1) {
+    color: #0000ff;
+    background-color: #d0efff;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* CONTINUETION OF CSS CODE IS IN MAIN.CSS */

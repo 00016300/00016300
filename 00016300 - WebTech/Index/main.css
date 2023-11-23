@@ -1,0 +1,244 @@
+/* MAIN, BANNER, PRODUCTS */
+/* MAIN */
+main {
+    padding: 0 100px;
+}
+
+/* BANNER */
+.banner {
+    height: 40vh;
+    background-color: var(--bgColor1);
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+    margin: 0 0 50px 0;
+}
+
+.banner-img {
+    height: 300px;
+}
+.banner img:nth-child(1){
+    display: block;
+}
+.banner img:nth-child(2) {
+    display: none;
+}
+.banner img:nth-child(3) {
+    display: none;
+}
+
+/* LEFT & RIGHT BUTTONS */
+.btn-left, .btn-right {
+    position: absolute;
+
+    height: 45px;
+    cursor: pointer;
+}
+.btn-left:hover, .btn-right:hover{ 
+    height: 50px;
+}
+
+.btn-left {
+    left: 0;
+}
+.btn-right {
+    right: 0;
+
+    /* FOR THIS BUTTON I USED THE SAME IMG
+    THAT WAS USED FOR LEFT BUTTON, 
+    BUT I DECIDED TO JUST ROTATE IT TO RGHT SIDE */
+    -webkit-transform: rotate(180deg); 
+    -moz-transform: rotate(180deg); 
+    -o-transform: rotate(180deg); 
+    -ms-transform: rotate(180deg); 
+    transform: rotate(180deg);
+}
+
+/* PRODUCTS */
+#product-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0px;
+}
+
+#products {
+    margin-bottom: 15px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.products .heading h2 {
+    font-size: 35px;
+}
+.heading img {
+    height: 25px;
+    margin-left: 10px;
+
+    /* FOR THIS IMG I USED THE SAME IMG
+    THAT WAS USED FOR LEFT BUTTON, 
+    BUT I DECIDED TO JUST ROTATE IT TO RGHT SIDE */
+    -webkit-transform: rotate(180deg); 
+    -moz-transform: rotate(180deg); 
+    -o-transform: rotate(180deg); 
+    -ms-transform: rotate(180deg); 
+    transform: rotate(180deg);
+}
+/* SETTING THE VALUE OF A PRODUCT WRAPPER */
+.products .product-img {
+    position: relative;
+    height: 500px;
+    width: 240px;
+    border-radius: 10px;
+}
+
+/* PUTTING HEART ICON AT THE TOP RIGHT CORNER 
+OF THE PRODUCT WRAPPER */
+#products .btnFavourite {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    height: 20px;
+}
+
+/* PUTTING EXCLUSIVE & SALE TO B0TTOM LEFT CORNER
+OF A PRODUCT WRAPPER */
+.imgProduct-wrapper {
+    position: relative;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bgColor1);
+    border-radius: 10px;
+}
+.product-img:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+
+
+.product-img .exclusive-sale{
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+
+    display: flex;
+    flex-direction: row;
+}
+.exclusive-sale p{
+    padding: 5px;
+    border-radius: 5px;
+}
+.exclusive-sale p:first-child{
+    background-color: #0000ff;
+    color: var(--fontColor);
+}
+.exclusive-sale p:last-child{
+    background-color: #ffff00;
+}
+
+/* SETTING A PRODUCT IMG VALUES */
+#products .imgProduct {
+    width: 220px;
+    border-radius: 10px;
+}
+
+
+/* PRODUCT INFO */
+.product-info {
+    width: 230px;   
+    margin-top: 10px;
+    padding: 0 5px;
+}
+.product-info p {
+    margin-top: 3px 0;
+    font-size: 16px;
+}
+.product-info p:nth-child(2), .product-info p:last-child {
+    font-size: 13px;
+}
+.product-info p:nth-child(3){
+    background-color: #ffff00;
+    display: inline-block;
+
+    margin: 5px 0;
+
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.product-rate {
+    display: flex;
+    margin: 5px 0;
+}
+.product-rate img {
+    height: 15px;
+    margin-right: 3px;
+}
+
+.product-cost {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product-cost img {
+    height: 28px;
+    border: 1px solid var(--bgColor1);
+    border-radius: 40px;
+    padding: 4px;
+}
+.product-cost img:hover {
+    background-color: var(--bgColor1);
+}
+
+#product-cost p:nth-child(1) {
+    font-size: 14px;
+    text-decoration: line-through;
+}
+#product-cost p:nth-child(2) {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+/*SHOW MORE BUTTON */
+.btnShow-more {
+    line-height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.btnShow-more p {
+    font-size: 20px;
+    font-weight: 600;
+    width: 700px;
+    background-color: var(--bgColor1);
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btnShow-more p:hover {
+    background-color: #d6d6d6;
+}
+
+/* CONTINUETION OF CSS CODE IS IN FOOTER.CSS */

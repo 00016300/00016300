@@ -1,0 +1,38 @@
+@media screen and (max-width: 1250px) {
+    .hamburger-menu {
+        display: block;
+        /* Additional styling for the hamburger menu */
+    }
+
+    .expanded-menu {
+        display: none;
+        /* Additional styling for the expanded menu */
+    }
+
+    .personal-pages {
+        padding: 5px 15px;
+    }
+    .profile-search {
+        padding: 5px 15px;
+    }
+    .product-types {
+        padding: 0 15px;
+    }
+    main {
+        padding: 0 15px;
+    }
+    /* You may want to hide or rearrange other elements in the navigation */
+}
+
+
+@media screen and (min-width: 1251px) {
+    .hamburger-menu {
+        display: none;
+    }
+    .expanded-menu {
+        display: flex;
+        flex-direction: row;
+        /* Additional styling for the expanded menu */
+    }
+}
+

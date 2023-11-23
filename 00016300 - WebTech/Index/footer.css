@@ -1,0 +1,38 @@
+footer {
+
+    border-top: 1px solid var(--mainColor);
+    padding: 15px;
+    margin: 0 300px;
+    text-align: center;
+}
+
+footer .socials {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+
+.social-icons img {
+    height: 25px;
+    cursor: pointer;
+}
+
+.socials p {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.social-platforms{
+    margin-top: 10px;
+}
+.social-platforms img {
+    margin: 10px 10px 0 10px;
+}
+
+footer .wiut {
+    border-top: 1px solid var(--mainColor);
+    padding-top: 15px;
+    margin-top: 25px;
+    font-weight: 600;
+}
